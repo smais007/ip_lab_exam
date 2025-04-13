@@ -1,43 +1,4 @@
-#include <iostream>
-using namespace std;
 
-int main() {
-    int num, sum = 0;
-
-    cout << "Enter integers (0 to stop): ";
-    while (true) {
-        cin >> num;
-        if (num == 0) break;
-        if (num > 0) {
-            sum += num;
-        }
-    }
-
-    cout << "Sum of positive numbers = " << sum << endl;
-    return 0;
-}
-
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string word;
-    int count = 0;
-
-    cout << "Enter a word (max 100 characters): ";
-    cin >> word;
-
-    for (char ch : word) {
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-            count++;
-        }
-    }
-
-    cout << "Number of vowels = " << count << endl;
-    return 0;
-}
 
 #include <iostream>
 #include <string>
